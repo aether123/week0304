@@ -1,0 +1,40 @@
+.custom-select {
+  position: relative;
+
+  select {
+    width: 304px;
+    height: 38px;
+    font-size: 18px;
+    color: #495057;
+    padding: 6px 12px;
+    appearance: none;
+    cursor: pointer;
+  }
+  &::after {
+    content: "▼";
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    pointer-events: none;
+  }
+}
+.map {
+  max-width: 100%;
+}
+.border-transparent-black {
+  border: 1px solid #00000020;
+}
+
+.site {
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .custom-select {
+    select {
+      width: 276px;
+    }
+  }
+}

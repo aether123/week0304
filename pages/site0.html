@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./layout/head'); -%>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="py-80">
+      <div class="container">
+        <h2 class="fs-8 fw-bold border-left--deep-red pl-3 mb-5">門市據點</h2>
+        <div class="d-flex align-items-center">
+          <div>
+            <label for="site" class="mb-4 mr-3 fs-4 fs-sm-2 text-nowrap"
+              >選擇地區</label
+            >
+          </div>
+          <div class="custom-select">
+            <select id="site" name="site">
+              <option value="台北市">台北中山旗艦店</option>
+            </select>
+          </div>
+        </div>
+        <%- include('./component/store_info'); -%>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

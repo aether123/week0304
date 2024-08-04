@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./layout/head'); -%>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="series-nav">
+      <div class="container">
+        <ul class="fs-5 d-flex text-center row fs-md-4 fs-sm-2">
+          <li class="col-4">
+            <a href="#" class="d-block active py-4 border-gainsboro">OPTICAL</a>
+          </li>
+          <li class="col-4">
+            <a
+              href="series_sunglasses.html"
+              class="d-block border-gainsboro py-4"
+              >SUNGLASSES</a
+            >
+          </li>
+          <li class="col-4">
+            <a href="" class="d-block border-gainsboro py-4">FUNCTIONALS</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="d-flex justify-content-center">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true"
+          alt="眼鏡"
+          class="w-half img-md-product1"
+        />
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true"
+          alt="眼鏡"
+          class="w-half img-md-product2"
+        />
+      </div>
+    </section>
+    <section class="py-80">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-medium fs-7 fs-sm-4">Celluloid Combi</h2>
+          <h3 class="fs-5 fs-sm-4">賽璐珞鈦金屬混合鏡框</h3>
+        </div>
+        <ul class="row">
+          <%- include('./component/series_optical'); -%>
+        </ul>
+        <%- include('./component/pagination'); -%>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

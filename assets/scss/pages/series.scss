@@ -1,0 +1,63 @@
+.series-nav {
+  a {
+    position: relative;
+  }
+  a.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 8px;
+    background-color: $info;
+  }
+  .border-gainsboro {
+    border: 1px solid #dcdcdc;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+.box {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.pagination-fs-1 {
+  font-size: 18px;
+}
+
+.pagination-pxy-1 {
+  padding: 12px;
+}
+.pagination-pxy-2 {
+  padding: 12px 16px;
+}
+.pagination-box {
+  border: 1px solid black;
+  a {
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .img-md-product1 {
+    content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
+  }
+  .img-md-product2 {
+    content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true);
+  }
+  .img-md-sunglasses1 {
+    content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+  }
+  .img-md-sunglasses2 {
+    content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+  }
+}
+@media screen and (max-width: 572px) {
+}

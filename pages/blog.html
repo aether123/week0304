@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./layout/head'); -%>
+  <body>
+    <%- include('./layout/header'); -%> <%- include('./component/blog_nav'); -%>
+    <section class="py-80">
+      <div class="container">
+        <h2 class="fs-8 fw-bold border-left--deep-red pl-3 mb-5">部落格</h2>
+        <%- include('./component/blog_newest'); -%> <%-
+        include('./component/pagination'); -%>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<ul class="row mt-40">
+  <% const store_info={
+  "store_img":["https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true",
+  "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-2.png?raw=true",
+  "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-3.png?raw=true",
+  "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-4.png?raw=true",
+  "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-5.png?raw=true",],
+  "store_name":["台北中山旗艦店","台北綠園店","台中清水旗艦店","高雄中正形象店","高雄夢時代店"],
+  "store_phone":["電話：(02)000-1234","電話：(02)000-2345","電話：(02)000-1234","電話：(07)000-2345","電話：(07)000-1234"],
+  "store_site" :[ "地址：台北市中山區南京東路25巷2-1號",
+  "地址：台北市中正區復興南路 132-1 號", "地址：台中市清水區經南一路 23 號 8\
+  樓", "地址：高雄市苓雅區中正路 38 號 12 樓", `地址：高雄市前鎮區中華一路 63 號
+  6 樓` ] ,} %> <% for (let i=0;i<5;i++){%>
+  <li class="col-4 mb-7 col-md-6 col-sm-12">
+    <img src="<%= store_info.store_img[i] %>" alt="門市" />
+    <h3 class="border-transparent-black py-2 pl-4 fs-4">
+      <%= store_info.store_name[i] %>
+    </h3>
+
+    <ul class="border-transparent-black pxy-3 fs-3">
+      <li class="mb-2">
+        <a href="#" class="d-flex align-items-center">
+          <p class="material-symbols-outlined mr-small fs-3">call</p>
+          <p><%= store_info.store_phone[i] %></p>
+        </a>
+      </li>
+      <li class="mb-2">
+        <a href="#" class="d-flex align-items-center">
+          <p class="material-symbols-outlined mr-small fs-3">access_time</p>
+          <p>營業時間：10:00-21:00</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="d-flex align-items-start">
+          <p class="material-symbols-outlined site">location_on</p>
+          <p><%= store_info.store_site[i] %></p>
+        </a>
+      </li>
+    </ul>
+    <a
+      href="site<%= i%>.html"
+      class="border-transparent-black fs-3 color-light text-center dark-bg d-block py-2"
+      >詳細資料</a
+    >
+  </li>
+  <%}%>
+</ul>
